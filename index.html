@@ -1,0 +1,10 @@
+<!-- This file has been base64 encoded -->
+<import base64
+
+# Read the HTML file content
+with open('/shared/069b21f2/Desktop/WorkStuff/Shared/counter.html', 'r') as f:
+    html_content = f.read()
+
+# Encode to base64
+encoded_content = base64.b64encode(html_content.encode()).decode()
+print(encoded_content)
